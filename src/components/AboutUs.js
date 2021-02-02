@@ -1,18 +1,11 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
 import BlockContent from "@sanity/block-content-to-react";
-import imageUrlBuilder from "@sanity/image-url";
 import { SocialIcon } from "react-social-icons";
 import "./styles/about.css";
 
 const AboutUs = () => {
     const [author, setAuthor] = useState(null);
-
-    const builder = imageUrlBuilder(sanityClient);
-    function urlFor(source) {
-        return builder.image(source);
-    }
-
     useEffect(() => {
         sanityClient
             .fetch(
@@ -59,6 +52,7 @@ const AboutUs = () => {
                                 <img
                                     className="lg:rounded-r-lg sm:rounded-lg "
                                     src={author.authorImage}
+                                    alt={author.name}
                                 />
                             </div>
                             <div className="w-96 block bg-gray-200 text-gray-900 lg:rounded-l-lg sm:rounded-lg">
