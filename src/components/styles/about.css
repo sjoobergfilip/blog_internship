@@ -1,0 +1,25 @@
+.box-width {
+    max-width: 700px;
+}
+
+.mobile:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 660px) {
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    .mobile:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+}
