@@ -14,7 +14,11 @@ const NavBar = () => {
                         activeClassName="nav-link-active"
                         className="home-name inflex-flex items-center py-6 px-3 mr-4 text-gray-100 hover:text-gray-5 text-3xl font-bold cursive tracking-widest heading"
                     >
-                        <img src={logo} className="w-24" />
+                        <img
+                            src={logo}
+                            className="w-24"
+                            alt="Logo for whe website"
+                        />
                     </NavLink>
                     <NavLink
                         to="/"
