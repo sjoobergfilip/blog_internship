@@ -35,10 +35,11 @@ const BlogPost = () => {
         <main className="bg-green-700 min-h-screen p-12">
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive text-gray-50">
-                    MFFs internship
+                    Our internship at Malmö Civic Lab
                 </h1>
                 <h2 className="text-lg text-gray-50 flex justify-center mb-12">
-                    Here you can read about our development
+                    Hello welcome to our blog. Here you can read about our
+                    development during our internship at Malmö Civic Lab
                 </h2>
                 {loading ? (
                     <div className="text-xl text-gray-50 flex justify-center h-72">

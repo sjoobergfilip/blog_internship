@@ -37,7 +37,12 @@ const SinglePost = () => {
             .catch(console.error);
     }, [slug]);
 
-    if (!singlePost) return <div>Loading...</div>;
+    if (!singlePost)
+        return (
+            <div className="bg-green-700 h-screen w-screen text-gray-50 text-center text-xl">
+                Loading...
+            </div>
+        );
 
     return (
         <main className="bg-green-700 min-h-screen p-12">
