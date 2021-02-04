@@ -32,7 +32,7 @@ const BlogPost = () => {
     }, []);
 
     return (
-        <main className="bg-green-700 min-h-screen p-12">
+        <main className="bg-green-700 min-h-screen lg:p-12 p-2">
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive text-gray-50">
                     Our internship at Malmö Civic Lab

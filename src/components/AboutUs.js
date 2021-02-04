@@ -30,7 +30,7 @@ const AboutUs = () => {
     }, []);
     return (
         <main className="bg-green-700 min-h-screen lg:p-20 md:p-10 sm:p-2">
-            <section className="w-3/5  m-auto">
+            <section className="lg:w-3/5 md:w-3/5 lg:m-auto md:m-auto mx-4">
                 <h1 className="text-5xl text-gray-50 mb-2">About us</h1>
                 <p className="text-gray-50 ">
                     We are three frontend developers from medieinstitutet that
